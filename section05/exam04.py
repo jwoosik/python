@@ -34,3 +34,5 @@ num1 = int( num[-1] )
 res = num1 % 2 # 나눈 값이 1이면 True, 0이면 False
 result = '운행 불가' if res else '운행 가능'
 print(f'차량번호 \'{num}\'는 오늘 {result}입니다.')
+
+
