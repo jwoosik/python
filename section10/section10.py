@@ -74,5 +74,40 @@ li2 = ss.rstrip() # 오른쪽 공백들을 전부 지운다.
 li3 = sss.strip()  # 양쪽 끝 공백들을 전부 지운다.
 print(li, li2, li3,sep=',')
 
+# 리스트 메소드: 추가, 삽입, 삭제
+li = [10, 20, 30]
+li.append(40)   # 리스트에 데이터를 추가
+li.append(50)   # 리스트에 데이터를 추가
 
+li.insert(1, 15)    # 두 번째 요소에 값 15를 삽입
 
+li.extend([10, 20])
+print(li)
+
+value = li.pop()    # 인덱스를 지정하면 해당 인덱스의 값을 밖으로 꺼낸다.
+print(value)    # 디폴트는 가장 뒤에 있는 값을 출력
+
+value = li.pop(1)    # 인덱스를 지정하면 해당 인덱스의 값을 밖으로 꺼낸다.
+print(value)
+
+li.remove(10)   # 리스트 내의 값을 지정하여 삭제한다.
+li.clear()  # 리스트의 내용을 전부 지운다.
+
+# 세트 메소드
+
+s1 = {10, 20, 30,}
+s2 = set(20, 30, 40)
+
+# 교집합 s1 & s2
+s3 = s1.intersection(s2)
+print(s3)
+s3 = s1 & s2
+print(s3)
+
+# 합집합 s1 | s2
+s3 = s1.union(s2)
+s3 = s1 | s2
+
+# 차집합 s1 - s2
+s3 = s1.difference(s2)
+s3 = s1 - s2
